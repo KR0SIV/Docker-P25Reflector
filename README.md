@@ -16,7 +16,9 @@ Run the line below to start the container, it will download it for you if it doe
     docker run --name TG50100 -id -p 41000:41000/udp corrosive/docker-p25reflector
 
 You may wish to change several parameters before executing the above command.
+
 The --name field is the name of your container, in this case I've named it to match my repeater talk group TG50100
+
 The -p field contains the internal and external port numbers used to run the server, you may wish to change the first port listed especially if you plan to run multiple talkgroups/servers.
 
 To ensure your container is running execute the following command.
