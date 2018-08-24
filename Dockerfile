@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FROM ubuntu:latest
+MAINTAINER Harold Giddings KR0SIV "harold@giddings.me"
 
 WORKDIR /
 ENV HOME /
@@ -8,9 +9,6 @@ ENV HOME /
 RUN apt-get update
 RUN apt-get install build-essential -y
 RUN apt-get install libstdc++6 -y
-#RUN apt-get install aufs-tools -y
-#RUN sudo apt-get install libgcc -y
-#RUN sudo apt-get dist-upgrade -y
 
 COPY P25Reflector /P25Reflector
 COPY P25Reflector.ini /etc/P25Reflector.ini
@@ -24,5 +22,3 @@ RUN chmod +x /DMRIds.dat
 
 EXPOSE 41000/udp
 ENTRYPOINT ["/entry.sh"]
-#ENTRYPOINT ["/P25Reflector"]
-#CMD ["/P25Reflector"]
