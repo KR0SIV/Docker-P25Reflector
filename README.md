@@ -19,7 +19,7 @@ You may wish to change several parameters before executing the above command.
 
 The --name field is the name of your container, in this case I've named it to match my repeater talk group TG50100
 
-The -p field contains the internal and external port numbers used to run the server, you may wish to change the first port listed especially if you plan to run multiple talkgroups/servers.
+The -p field contains the internal and external port numbers used to run the server, you may wish to change the first port listed especially if you plan to run multiple talkgroups/servers. Do NOT change second port listed as that is the internal port used by the docker container. Chaning that port will break functionality.
 
 To ensure your container is running execute the following command.
 
