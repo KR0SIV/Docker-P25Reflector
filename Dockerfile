@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FROM ubuntu:latest
-MAINTAINER Harold Giddings KR0SIV "harold@giddings.me"
+MAINTAINER Sarah Giddings KR0SIV "sarah@signalseverywhere.com"
 
 WORKDIR /
 ENV HOME /
